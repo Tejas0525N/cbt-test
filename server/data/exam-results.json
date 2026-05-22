@@ -1,0 +1,1208 @@
+[
+  {
+    "id": 1,
+    "exam_attempt_id": 4,
+    "total_questions": 30,
+    "correct_answers": 2,
+    "wrong_answers": 28,
+    "percentage_score": 7,
+    "passed": false,
+    "marks_obtained": 2,
+    "total_marks": 30,
+    "time_taken_minutes": 30,
+    "submitted_at": "2026-04-14T07:06:38.375Z",
+    "published_to_profile": true,
+    "email_sent": false,
+    "user_answers": [
+      {
+        "question_id": 1,
+        "selected_option_ids": [
+          3
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 2,
+        "selected_option_ids": [
+          6
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 3,
+        "selected_option_ids": [
+          12
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 4,
+        "selected_option_ids": [
+          13
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 5,
+        "selected_option_ids": [
+          19
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 6,
+        "selected_option_ids": [
+          23
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 7,
+        "selected_option_ids": [
+          25
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 8,
+        "selected_option_ids": [
+          31
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 9,
+        "selected_option_ids": [
+          36
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 10,
+        "selected_option_ids": [
+          38
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 11,
+        "selected_option_ids": [
+          41
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 12,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 13,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 14,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 15,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 16,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 17,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 18,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 19,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 20,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 21,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 22,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 23,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 24,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 25,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 26,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 27,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 28,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 29,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 30,
+        "selected_option_ids": [],
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "exam_attempt_id": 4,
+    "total_questions": 30,
+    "correct_answers": 11,
+    "wrong_answers": 19,
+    "percentage_score": 37,
+    "passed": false,
+    "marks_obtained": 11,
+    "total_marks": 30,
+    "time_taken_minutes": 30,
+    "submitted_at": "2026-04-14T07:08:20.675Z",
+    "published_to_profile": true,
+    "email_sent": false,
+    "user_answers": [
+      {
+        "question_id": 1,
+        "selected_option_ids": [
+          4
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 2,
+        "selected_option_ids": [
+          6
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 3,
+        "selected_option_ids": [
+          12
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 4,
+        "selected_option_ids": [
+          13
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 5,
+        "selected_option_ids": [
+          19
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 6,
+        "selected_option_ids": [
+          21
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 7,
+        "selected_option_ids": [
+          28
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 8,
+        "selected_option_ids": [
+          30
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 9,
+        "selected_option_ids": [
+          33
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 10,
+        "selected_option_ids": [
+          40
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 11,
+        "selected_option_ids": [
+          42
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 12,
+        "selected_option_ids": [
+          45
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 13,
+        "selected_option_ids": [
+          51
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 14,
+        "selected_option_ids": [
+          55
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 15,
+        "selected_option_ids": [
+          57
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 16,
+        "selected_option_ids": [
+          63
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 17,
+        "selected_option_ids": [
+          68
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 18,
+        "selected_option_ids": [
+          70
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 19,
+        "selected_option_ids": [
+          73
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 20,
+        "selected_option_ids": [
+          79
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 21,
+        "selected_option_ids": [
+          84
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 22,
+        "selected_option_ids": [
+          87
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 23,
+        "selected_option_ids": [
+          92
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 24,
+        "selected_option_ids": [
+          94
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 25,
+        "selected_option_ids": [
+          99
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 26,
+        "selected_option_ids": [
+          102
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 27,
+        "selected_option_ids": [
+          108
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 28,
+        "selected_option_ids": [
+          110
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 29,
+        "selected_option_ids": [
+          115
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 30,
+        "selected_option_ids": [
+          118
+        ],
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "exam_attempt_id": 4,
+    "total_questions": 30,
+    "correct_answers": 4,
+    "wrong_answers": 26,
+    "percentage_score": 13,
+    "passed": false,
+    "marks_obtained": 4,
+    "total_marks": 30,
+    "time_taken_minutes": 30,
+    "submitted_at": "2026-04-14T07:20:44.319Z",
+    "published_to_profile": true,
+    "email_sent": false,
+    "user_answers": [
+      {
+        "question_id": 1,
+        "selected_option_ids": [
+          3
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 2,
+        "selected_option_ids": [
+          5
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 3,
+        "selected_option_ids": [
+          12
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 4,
+        "selected_option_ids": [
+          14
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 5,
+        "selected_option_ids": [
+          19
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 6,
+        "selected_option_ids": [
+          23
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 7,
+        "selected_option_ids": [
+          25
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 8,
+        "selected_option_ids": [
+          32
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 9,
+        "selected_option_ids": [
+          34
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 10,
+        "selected_option_ids": [
+          37
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 11,
+        "selected_option_ids": [
+          43
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 12,
+        "selected_option_ids": [
+          48
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 13,
+        "selected_option_ids": [
+          49
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 14,
+        "selected_option_ids": [
+          56
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 15,
+        "selected_option_ids": [
+          58
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 16,
+        "selected_option_ids": [
+          61
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 17,
+        "selected_option_ids": [
+          68
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 18,
+        "selected_option_ids": [
+          70
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 19,
+        "selected_option_ids": [
+          73
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 20,
+        "selected_option_ids": [
+          79
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 21,
+        "selected_option_ids": [
+          84
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 22,
+        "selected_option_ids": [
+          87
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 23,
+        "selected_option_ids": [
+          90
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 24,
+        "selected_option_ids": [
+          93
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 25,
+        "selected_option_ids": [
+          99
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 26,
+        "selected_option_ids": [
+          104
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 27,
+        "selected_option_ids": [
+          105
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 28,
+        "selected_option_ids": [
+          111
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 29,
+        "selected_option_ids": [
+          116
+        ],
+        "is_correct": false
+      },
+      {
+        "question_id": 30,
+        "selected_option_ids": [
+          118
+        ],
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "exam_attempt_id": 4,
+    "total_questions": 30,
+    "correct_answers": 0,
+    "wrong_answers": 30,
+    "percentage_score": 0,
+    "passed": false,
+    "marks_obtained": 0,
+    "total_marks": 30,
+    "time_taken_minutes": 30,
+    "submitted_at": "2026-04-15T06:18:56.486Z",
+    "published_to_profile": false,
+    "email_sent": false,
+    "user_answers": [
+      {
+        "question_id": 1,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 2,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 3,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 4,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 5,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 6,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 7,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 8,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 9,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 10,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 11,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 12,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 13,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 14,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 15,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 16,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 17,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 18,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 19,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 20,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 21,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 22,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 23,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 24,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 25,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 26,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 27,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 28,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 29,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 30,
+        "selected_option_ids": [],
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "exam_attempt_id": 601,
+    "total_questions": 30,
+    "correct_answers": 1,
+    "wrong_answers": 29,
+    "percentage_score": 3,
+    "passed": false,
+    "marks_obtained": 1,
+    "total_marks": 30,
+    "time_taken_minutes": 30,
+    "submitted_at": "2026-05-19T09:32:37.623Z",
+    "published_to_profile": false,
+    "email_sent": false,
+    "user_answers": [
+      {
+        "question_id": 1,
+        "selected_option_ids": [
+          4
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 2,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 3,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 4,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 5,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 6,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 7,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 8,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 9,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 10,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 11,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 12,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 13,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 14,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 15,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 16,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 17,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 18,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 19,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 20,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 21,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 22,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 23,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 24,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 25,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 26,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 27,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 28,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 29,
+        "selected_option_ids": [],
+        "is_correct": false
+      },
+      {
+        "question_id": 30,
+        "selected_option_ids": [],
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "exam_attempt_id": 601,
+    "total_questions": 30,
+    "correct_answers": 30,
+    "wrong_answers": 0,
+    "percentage_score": 100,
+    "passed": true,
+    "marks_obtained": 30,
+    "total_marks": 30,
+    "time_taken_minutes": 30,
+    "submitted_at": "2026-05-19T10:10:13.447Z",
+    "published_to_profile": true,
+    "email_sent": true,
+    "user_answers": [
+      {
+        "question_id": 1,
+        "selected_option_ids": [
+          4
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 2,
+        "selected_option_ids": [
+          6
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 3,
+        "selected_option_ids": [
+          10
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 4,
+        "selected_option_ids": [
+          13
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 5,
+        "selected_option_ids": [
+          18
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 6,
+        "selected_option_ids": [
+          22
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 7,
+        "selected_option_ids": [
+          27
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 8,
+        "selected_option_ids": [
+          30
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 9,
+        "selected_option_ids": [
+          34
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 10,
+        "selected_option_ids": [
+          39
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 11,
+        "selected_option_ids": [
+          42
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 12,
+        "selected_option_ids": [
+          46
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 13,
+        "selected_option_ids": [
+          51
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 14,
+        "selected_option_ids": [
+          54
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 15,
+        "selected_option_ids": [
+          58
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 16,
+        "selected_option_ids": [
+          63
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 17,
+        "selected_option_ids": [
+          66
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 18,
+        "selected_option_ids": [
+          72
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 19,
+        "selected_option_ids": [
+          74
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 20,
+        "selected_option_ids": [
+          78
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 21,
+        "selected_option_ids": [
+          83
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 22,
+        "selected_option_ids": [
+          86
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 23,
+        "selected_option_ids": [
+          90
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 24,
+        "selected_option_ids": [
+          95
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 25,
+        "selected_option_ids": [
+          98
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 26,
+        "selected_option_ids": [
+          102
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 27,
+        "selected_option_ids": [
+          106
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 28,
+        "selected_option_ids": [
+          110
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 29,
+        "selected_option_ids": [
+          115
+        ],
+        "is_correct": true
+      },
+      {
+        "question_id": 30,
+        "selected_option_ids": [
+          118
+        ],
+        "is_correct": true
+      }
+    ]
+  }
+]

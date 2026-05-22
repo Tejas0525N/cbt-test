@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "username": "admin",
+    "email": "admin@maritimecbt.com",
+    "full_name": "System Administrator",
+    "rank_id": 1,
+    "rank_name": "MASTER",
+    "department_name": "Deck",
+    "phone": "+1234567890",
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "is_active": true,
+    "role": "admin"
+  },
+  {
+    "id": 2,
+    "username": "john_doe",
+    "email": "john@example.com",
+    "full_name": "John Doe",
+    "rank_id": 0,
+    "rank_name": "CHIEF OFFICER",
+    "department_name": "Deck",
+    "phone": "+1234567891",
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "is_active": true,
+    "role": "user"
+  },
+  {
+    "id": 4,
+    "username": "mike_wilson",
+    "email": "mike@example.com",
+    "full_name": "Mike Wilson",
+    "rank_id": 63,
+    "rank_name": "CHIEF COOK",
+    "department_name": "Catering",
+    "phone": "+1234567893",
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "is_active": true,
+    "role": "user"
+  },
+  {
+    "id": 5,
+    "username": "sarah_jones",
+    "email": "sarah@example.com",
+    "full_name": "Sarah Jones",
+    "rank_id": 45,
+    "rank_name": "MEDIC",
+    "department_name": "Specialist",
+    "phone": "+1234567894",
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "is_active": true,
+    "role": "user"
+  },
+  {
+    "id": 6,
+    "username": "Test",
+    "email": "tejas@trustshipping.org",
+    "full_name": "Test Test",
+    "rank_id": 12,
+    "rank_name": "PUMPMAN",
+    "department_name": "Deck",
+    "phone": "8356900816",
+    "created_at": "2026-04-08T10:05:26.898Z",
+    "is_active": true,
+    "role": "user"
+  },
+  {
+    "id": 8,
+    "username": "tejas",
+    "email": "tejasnikam0525@gmail.com",
+    "full_name": "tejas",
+    "rank_id": 12,
+    "rank_name": "PUMPMAN",
+    "department_name": "Deck",
+    "phone": "8356900816",
+    "created_at": "2026-05-19T07:34:41.343Z",
+    "is_active": true,
+    "role": "user",
+    "password_hash": "$2a$10$vPDBGPqWaM6Chdvj2eg2reEQtdeXYTnTlaEtpv1wPSGk0HybZtt2C"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 4,
+    "exam_session_id": 4,
+    "user_id": 6,
+    "attempt_number": 1,
+    "question_set_used": "set_1",
+    "started_at": "2026-04-15T06:18:48.180Z",
+    "submitted_at": "2026-04-15T06:18:56.480Z",
+    "status": "submitted",
+    "time_taken_minutes": 30,
+    "passed": false,
+    "percentage_score": 65,
+    "next_attempt_available": "2026-04-17T06:18:56.480Z"
+  },
+  {
+    "id": 501,
+    "exam_session_id": 5,
+    "user_id": 6,
+    "attempt_number": 1,
+    "question_set_used": "set_1",
+    "started_at": "2026-04-28T10:33:55.328Z",
+    "submitted_at": null,
+    "status": "in_progress",
+    "time_taken_minutes": null,
+    "passed": false,
+    "percentage_score": null,
+    "next_attempt_available": null
+  },
+  {
+    "id": 601,
+    "exam_session_id": 6,
+    "user_id": 6,
+    "attempt_number": 1,
+    "question_set_used": "set_1",
+    "started_at": "2026-05-19T07:38:32.899Z",
+    "submitted_at": null,
+    "status": "in_progress",
+    "time_taken_minutes": null,
+    "passed": false,
+    "percentage_score": null,
+    "next_attempt_available": null
+  }
+]

@@ -1,0 +1,626 @@
+[
+  {
+    "id": 1,
+    "rank_name": "MASTER",
+    "department_id": 1,
+    "department_name": "Deck",
+    "description": "Master of the vessel",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "rank_name": "ADDITIONAL MASTER",
+    "department_id": 1,
+    "department_name": "Deck",
+    "description": "Additional Master",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "rank_name": "CHIEF OFFICER",
+    "department_id": 1,
+    "department_name": "Deck",
+    "description": "Chief Deck Officer",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "rank_name": "2ND OFFICER",
+    "department_id": 1,
+    "department_name": "Deck",
+    "description": "Second Officer",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 5,
+    "rank_name": "3RD OFFICER",
+    "department_id": 1,
+    "department_name": "Deck",
+    "description": "Third Officer",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 6,
+    "rank_name": "JUNIOR DECK OFFICER",
+    "department_id": 1,
+    "department_name": "Deck",
+    "description": "Junior Deck Officer",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 7,
+    "rank_name": "RADIO OFFICER",
+    "department_id": 1,
+    "department_name": "Deck",
+    "description": "Radio Communications Officer",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 8,
+    "rank_name": "SECURITY OFFICER",
+    "department_id": 1,
+    "department_name": "Deck",
+    "description": "Security Officer",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 9,
+    "rank_name": "TRAINEE OFFICER",
+    "department_id": 1,
+    "department_name": "Deck",
+    "description": "Trainee Officer",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 10,
+    "rank_name": "DECK WATCHKEEPER",
+    "department_id": 1,
+    "department_name": "Deck",
+    "description": "Deck Watchkeeper",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 11,
+    "rank_name": "CADET DECK",
+    "department_id": 1,
+    "department_name": "Deck",
+    "description": "Deck Cadet",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 12,
+    "rank_name": "PUMPMAN",
+    "department_id": 1,
+    "department_name": "Deck",
+    "description": "Pumpman",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 13,
+    "rank_name": "BOSUN",
+    "department_id": 1,
+    "department_name": "Deck",
+    "description": "Boatswain",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 14,
+    "rank_name": "DECK WELDER",
+    "department_id": 1,
+    "department_name": "Deck",
+    "description": "Deck Welder",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 15,
+    "rank_name": "ABLE SEAMAN",
+    "department_id": 1,
+    "department_name": "Deck",
+    "description": "Able Seaman",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 16,
+    "rank_name": "ORDINARY SEAMAN",
+    "department_id": 1,
+    "department_name": "Deck",
+    "description": "Ordinary Seaman",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 17,
+    "rank_name": "DECK BOY",
+    "department_id": 1,
+    "department_name": "Deck",
+    "description": "Deck Boy",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 18,
+    "rank_name": "TUG MATE",
+    "department_id": 1,
+    "department_name": "Deck",
+    "description": "Tug Mate",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 19,
+    "rank_name": "TUG MASTER",
+    "department_id": 1,
+    "department_name": "Deck",
+    "description": "Tug Master",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 20,
+    "rank_name": "CRANE OPERATOR",
+    "department_id": 1,
+    "department_name": "Deck",
+    "description": "Crane Operator",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 21,
+    "rank_name": "CHIEF ENGINEER",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Chief Engineering Officer",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 22,
+    "rank_name": "CHIEF ELECTRICAL ENGINEER",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Chief Electrical Engineer",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 23,
+    "rank_name": "2ND ENGINEER",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Second Engineer",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 24,
+    "rank_name": "2ND ASST ENGINEER",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Second Assistant Engineer",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 25,
+    "rank_name": "3RD ENGINEER",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Third Engineer",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 26,
+    "rank_name": "3RD ASST ENGINEER",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Third Assistant Engineer",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 27,
+    "rank_name": "4TH ENGINEER",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Fourth Engineer",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 28,
+    "rank_name": "5TH ENGINEER",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Fifth Engineer",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 29,
+    "rank_name": "CARGO GAS ENGINEER",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Cargo Gas Engineer",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 30,
+    "rank_name": "ELECTRICAL ENGINEER",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Electrical Engineer",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 31,
+    "rank_name": "ETO",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Electro-Technical Officer",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 32,
+    "rank_name": "ELECTRONICS ENGINEER",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Electronics Engineer",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 33,
+    "rank_name": "ELECTRICIAN",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Electrician",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 34,
+    "rank_name": "ELECTRICIAN TRAINEE",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Electrician Trainee",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 35,
+    "rank_name": "ASST ELECTRICIAN",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Assistant Electrician",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 36,
+    "rank_name": "JUNIOR ENGINEER",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Junior Engineer",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 37,
+    "rank_name": "TRAINEE ENGINEER",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Trainee Engineer",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 38,
+    "rank_name": "CADET ENGINE",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Engine Cadet",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 39,
+    "rank_name": "FITTER",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Marine Fitter",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 40,
+    "rank_name": "MOTORMAN",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Motorman",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 41,
+    "rank_name": "1ST OILER",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "First Oiler",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 42,
+    "rank_name": "OILER",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Oiler",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 43,
+    "rank_name": "WIPER",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Wiper",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 44,
+    "rank_name": "ENGINE BOY",
+    "department_id": 2,
+    "department_name": "Engine",
+    "description": "Engine Boy",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 45,
+    "rank_name": "MEDIC",
+    "department_id": 3,
+    "department_name": "Specialist",
+    "description": "Ship Medic",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 46,
+    "rank_name": "CARPENTER",
+    "department_id": 3,
+    "department_name": "Specialist",
+    "description": "Ship Carpenter",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 47,
+    "rank_name": "REPAIRMAN",
+    "department_id": 3,
+    "department_name": "Specialist",
+    "description": "Repairman",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 48,
+    "rank_name": "SECURITY GUARD",
+    "department_id": 3,
+    "department_name": "Specialist",
+    "description": "Security Guard",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 49,
+    "rank_name": "SHIP CLERK",
+    "department_id": 3,
+    "department_name": "Specialist",
+    "description": "Ship Clerk",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 50,
+    "rank_name": "STAFF CAPTAIN",
+    "department_id": 3,
+    "department_name": "Specialist",
+    "description": "Staff Captain",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 51,
+    "rank_name": "SUPERCARGO",
+    "department_id": 3,
+    "department_name": "Specialist",
+    "description": "Superintendent Cargo",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 52,
+    "rank_name": "FIREMAN",
+    "department_id": 3,
+    "department_name": "Specialist",
+    "description": "Fireman",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 53,
+    "rank_name": "REPAIR SUPERVISOR",
+    "department_id": 3,
+    "department_name": "Specialist",
+    "description": "Repair Supervisor",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 54,
+    "rank_name": "LEADING HAND",
+    "department_id": 3,
+    "department_name": "Specialist",
+    "description": "Leading Hand",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 55,
+    "rank_name": "DECK SUPER",
+    "department_id": 3,
+    "department_name": "Specialist",
+    "description": "Deck Supervisor",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 56,
+    "rank_name": "ENG SUPER",
+    "department_id": 3,
+    "department_name": "Specialist",
+    "description": "Engine Supervisor",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 57,
+    "rank_name": "SUPERNUMERARY",
+    "department_id": 3,
+    "department_name": "Specialist",
+    "description": "Supernumerary",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 58,
+    "rank_name": "PILOT",
+    "department_id": 3,
+    "department_name": "Specialist",
+    "description": "Marine Pilot",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 59,
+    "rank_name": "RELIEF MASTER",
+    "department_id": 3,
+    "department_name": "Specialist",
+    "description": "Relief Master",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 60,
+    "rank_name": "RIDING TEAM DECK",
+    "department_id": 3,
+    "department_name": "Specialist",
+    "description": "Riding Team Deck",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 61,
+    "rank_name": "RIDING TEAM ENG",
+    "department_id": 3,
+    "department_name": "Specialist",
+    "description": "Riding Team Engine",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 62,
+    "rank_name": "OTHER",
+    "department_id": 3,
+    "department_name": "Specialist",
+    "description": "Other Positions",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 63,
+    "rank_name": "CHIEF COOK",
+    "department_id": 4,
+    "department_name": "Catering",
+    "description": "Chief Cook",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 64,
+    "rank_name": "2ND COOK",
+    "department_id": 4,
+    "department_name": "Catering",
+    "description": "Second Cook",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 65,
+    "rank_name": "3RD CHEF",
+    "department_id": 4,
+    "department_name": "Catering",
+    "description": "Third Chef",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 66,
+    "rank_name": "4TH CHEF",
+    "department_id": 4,
+    "department_name": "Catering",
+    "description": "Fourth Chef",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 67,
+    "rank_name": "ASSISTANT COOK",
+    "department_id": 4,
+    "department_name": "Catering",
+    "description": "Assistant Cook",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 68,
+    "rank_name": "COOK/STEWARD",
+    "department_id": 4,
+    "department_name": "Catering",
+    "description": "Cook/Steward",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 69,
+    "rank_name": "CATERING ASSISTANT",
+    "department_id": 4,
+    "department_name": "Catering",
+    "description": "Catering Assistant",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 70,
+    "rank_name": "PURSER",
+    "department_id": 4,
+    "department_name": "Catering",
+    "description": "Purser",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 71,
+    "rank_name": "CHIEF STEWARD",
+    "department_id": 4,
+    "department_name": "Catering",
+    "description": "Chief Steward",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 72,
+    "rank_name": "STEWARD/(ESS)",
+    "department_id": 4,
+    "department_name": "Catering",
+    "description": "Steward/ESS",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 73,
+    "rank_name": "CABIN STEWARDESS",
+    "department_id": 4,
+    "department_name": "Catering",
+    "description": "Cabin Stewardess",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 74,
+    "rank_name": "MESSMAN",
+    "department_id": 4,
+    "department_name": "Catering",
+    "description": "Messman",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 75,
+    "rank_name": "CHIEF HOUSEKEEPER",
+    "department_id": 4,
+    "department_name": "Catering",
+    "description": "Chief Housekeeper",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 76,
+    "rank_name": "HOUSEKEEPER",
+    "department_id": 4,
+    "department_name": "Catering",
+    "description": "Housekeeper",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 77,
+    "rank_name": "LAUNDRYMAN",
+    "department_id": 4,
+    "department_name": "Catering",
+    "description": "Laundryman",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 78,
+    "rank_name": "OTHER",
+    "department_id": 5,
+    "department_name": "Other",
+    "description": "Other Positions",
+    "created_at": "2024-01-01T00:00:00.000Z"
+  }
+]

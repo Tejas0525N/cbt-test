@@ -1,0 +1,19 @@
+node_modules
+npm-debug.log
+.git
+.gitignore
+README.md
+.env
+.env.local
+.env.*.local
+dist/*.map
+.vscode
+.idea
+*.md
+!README.md
+Test questions
+bun.lock
+bun.lockb
+.playwright
+test
+coverage

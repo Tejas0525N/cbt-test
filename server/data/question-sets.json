@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "rank_id": 1,
+    "set_name": "Captain Exam Set 1",
+    "description": "Basic maritime safety and navigation questions for captains",
+    "total_questions": 30,
+    "duration_minutes": 30,
+    "passing_percentage": 75,
+    "is_active": true,
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "rank_name": "MASTER",
+    "department_name": "Deck"
+  },
+  {
+    "id": 3,
+    "rank_id": 21,
+    "set_name": "Chief Engineer Exam Set 1",
+    "description": "Engineering systems and maintenance questions",
+    "total_questions": 30,
+    "duration_minutes": 30,
+    "passing_percentage": 75,
+    "is_active": true,
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "rank_name": "CHIEF ENGINEER",
+    "department_name": "Engine"
+  },
+  {
+    "id": 4,
+    "rank_id": 21,
+    "set_name": "Chief Engineer Exam Set 2",
+    "description": "Advanced engineering and troubleshooting questions",
+    "total_questions": 30,
+    "duration_minutes": 30,
+    "passing_percentage": 75,
+    "is_active": true,
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "rank_name": "CHIEF ENGINEER",
+    "department_name": "Engine"
+  },
+  {
+    "id": 6,
+    "rank_id": 63,
+    "set_name": "Chief Cook Exam Set 1",
+    "description": "Food safety and catering management questions",
+    "total_questions": 30,
+    "duration_minutes": 30,
+    "passing_percentage": 75,
+    "is_active": true,
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "rank_name": "CHIEF COOK",
+    "department_name": "Catering"
+  },
+  {
+    "id": 8,
+    "rank_id": "42",
+    "set_name": "PUMPMAN Exam Set 1",
+    "description": "PUMPMAN",
+    "total_questions": 30,
+    "duration_minutes": 30,
+    "passing_percentage": 75,
+    "is_active": true,
+    "created_at": "2026-04-08T11:49:21.924Z",
+    "rank_name": "",
+    "department_name": ""
+  },
+  {
+    "id": 9,
+    "rank_id": 5,
+    "set_name": "3RD OFFICER EXAM SET - 1",
+    "description": "3RD OFFICER",
+    "total_questions": 30,
+    "duration_minutes": 30,
+    "passing_percentage": 75,
+    "is_active": true,
+    "created_at": "2026-04-21T07:16:49.298Z",
+    "rank_name": "3RD OFFICER",
+    "department_name": "Deck"
+  }
+]

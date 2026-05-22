@@ -1,0 +1,1127 @@
+[
+  {
+    "question_set_id": 1,
+    "set_name": "Captain Exam Set 1",
+    "question_sets": {
+      "set_1": [
+        {
+          "id": 1,
+          "question_text": "What is the primary responsibility of a ship's captain during navigation?",
+          "question_type": "single_choice",
+          "question_order": 1,
+          "marks": 1,
+          "options": [
+            {
+              "id": 1,
+              "option_text": "Managing cargo operations",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 2,
+              "option_text": "Ensuring safe navigation of the vessel",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 3,
+              "option_text": "Maintaining engine room operations",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 4,
+              "option_text": "Handling passenger services",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        }
+      ],
+      "set_2": [],
+      "set_3": []
+    },
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "updated_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "question_set_id": 3,
+    "set_name": "Chief Engineer Exam Set 1",
+    "question_sets": {
+      "set_1": [
+        {
+          "id": 1,
+          "question_text": "What is the normal operating temperature for a marine diesel engine?",
+          "question_type": "single_choice",
+          "question_order": 1,
+          "marks": 1,
+          "options": [
+            {
+              "id": 1,
+              "option_text": "60-70°C",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 2,
+              "option_text": "70-85°C",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 3,
+              "option_text": "85-95°C",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 4,
+              "option_text": "95-105°C",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        }
+      ],
+      "set_2": [],
+      "set_3": []
+    },
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "updated_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "question_set_id": 4,
+    "set_name": "Chief Engineer Exam Set 2",
+    "question_sets": {
+      "set_1": [],
+      "set_2": [],
+      "set_3": []
+    },
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "updated_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "question_set_id": 6,
+    "set_name": "Chief Cook Exam Set 1",
+    "question_sets": {
+      "set_1": [],
+      "set_2": [],
+      "set_3": []
+    },
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "updated_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "question_set_id": 8,
+    "set_name": "PUMPMAN Exam Set 1",
+    "question_sets": {
+      "set_1": [
+        {
+          "id": 1,
+          "question_text": "During cargo discharge, sudden drop in manifold pressure is observed. What is the MOST likely cause?",
+          "question_type": "single_choice",
+          "question_order": 1,
+          "marks": 1,
+          "options": [
+            {
+              "id": 1,
+              "option_text": "Increase in cargo temperature",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 2,
+              "option_text": "Tank overfilling",
+              "option_order": 2,
+              "is_correct": false
+            },
+            {
+              "id": 3,
+              "option_text": "High RPM of pump",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 4,
+              "option_text": "Suction filter choking or air ingress",
+              "option_order": 4,
+              "is_correct": true
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question_text": "While stripping, pump loses suction frequently. What should be checked FIRST?",
+          "question_type": "single_choice",
+          "question_order": 2,
+          "marks": 1,
+          "options": [
+            {
+              "id": 5,
+              "option_text": "Cargo density",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 6,
+              "option_text": "Stripping line leakage or air entry",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 7,
+              "option_text": "Manifold gasket",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 8,
+              "option_text": "Tank coating",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question_text": "What is the primary purpose of a PV valve on cargo tanks?",
+          "question_type": "single_choice",
+          "question_order": 3,
+          "marks": 1,
+          "options": [
+            {
+              "id": 9,
+              "option_text": "Control cargo flow",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 10,
+              "option_text": "Prevent overpressure and vacuum in tanks",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 11,
+              "option_text": "Measure ullage",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 12,
+              "option_text": "Reduce cargo temperature",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question_text": "During cargo heating, uneven temperature is noticed between tanks. Likely reason?",
+          "question_type": "single_choice",
+          "question_order": 4,
+          "marks": 1,
+          "options": [
+            {
+              "id": 13,
+              "option_text": "Steam coil blockage or air lock",
+              "option_order": 1,
+              "is_correct": true
+            },
+            {
+              "id": 14,
+              "option_text": "Different cargo grade",
+              "option_order": 2,
+              "is_correct": false
+            },
+            {
+              "id": 15,
+              "option_text": "Pump speed variation",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 16,
+              "option_text": "Tank calibration error",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question_text": "While starting a cargo pump, why is slow opening of discharge valve important?",
+          "question_type": "single_choice",
+          "question_order": 5,
+          "marks": 1,
+          "options": [
+            {
+              "id": 17,
+              "option_text": "To reduce cargo contamination",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 18,
+              "option_text": "To avoid hydraulic shock and pipeline stress",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 19,
+              "option_text": "To increase flow rate",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 20,
+              "option_text": "To save steam",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question_text": "What indicates cavitation in cargo pump?",
+          "question_type": "single_choice",
+          "question_order": 6,
+          "marks": 1,
+          "options": [
+            {
+              "id": 21,
+              "option_text": "Smooth operation",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 22,
+              "option_text": "Vibrations and unusual noise",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 23,
+              "option_text": "Increase in pressure",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 24,
+              "option_text": "Decrease in temperature",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question_text": "During tank washing, what is the main risk if oxygen level exceeds limits?",
+          "question_type": "single_choice",
+          "question_order": 7,
+          "marks": 1,
+          "options": [
+            {
+              "id": 25,
+              "option_text": "Cargo contamination",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 26,
+              "option_text": "Static electricity only",
+              "option_order": 2,
+              "is_correct": false
+            },
+            {
+              "id": 27,
+              "option_text": "Fire/explosion hazard",
+              "option_order": 3,
+              "is_correct": true
+            },
+            {
+              "id": 28,
+              "option_text": "Pump damage",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question_text": "What is the function of stripping pump?",
+          "question_type": "single_choice",
+          "question_order": 8,
+          "marks": 1,
+          "options": [
+            {
+              "id": 29,
+              "option_text": "Load cargo",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 30,
+              "option_text": "Remove residual cargo from tanks/lines",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 31,
+              "option_text": "Heat cargo",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 32,
+              "option_text": "Vent tanks",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question_text": "High back pressure during discharge may result in:",
+          "question_type": "single_choice",
+          "question_order": 9,
+          "marks": 1,
+          "options": [
+            {
+              "id": 33,
+              "option_text": "Faster discharge",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 34,
+              "option_text": "Pump overload and reduced efficiency",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 35,
+              "option_text": "Increased cargo purity",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 36,
+              "option_text": "Lower temperature",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question_text": "What is the safest action if cargo leakage is detected on deck?",
+          "question_type": "single_choice",
+          "question_order": 10,
+          "marks": 1,
+          "options": [
+            {
+              "id": 37,
+              "option_text": "Ignore small leak",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 38,
+              "option_text": "Continue operation",
+              "option_order": 2,
+              "is_correct": false
+            },
+            {
+              "id": 39,
+              "option_text": "Stop operation and inform officer immediately",
+              "option_order": 3,
+              "is_correct": true
+            },
+            {
+              "id": 40,
+              "option_text": "Wash with seawater",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "question_text": "During crude oil washing (COW), what is critical to monitor?",
+          "question_type": "single_choice",
+          "question_order": 11,
+          "marks": 1,
+          "options": [
+            {
+              "id": 41,
+              "option_text": "Paint condition",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 42,
+              "option_text": "Oxygen level and tank atmosphere",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 43,
+              "option_text": "Ship speed",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 44,
+              "option_text": "Ballast level",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "question_text": "What is the main purpose of IG (Inert Gas)?",
+          "question_type": "single_choice",
+          "question_order": 12,
+          "marks": 1,
+          "options": [
+            {
+              "id": 45,
+              "option_text": "Cool cargo",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 46,
+              "option_text": "Reduce oxygen to prevent explosion",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 47,
+              "option_text": "Increase pressure",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 48,
+              "option_text": "Improve pumping",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "question_text": "If IG pressure drops suddenly, what should be done?",
+          "question_type": "single_choice",
+          "question_order": 13,
+          "marks": 1,
+          "options": [
+            {
+              "id": 49,
+              "option_text": "Ignore",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 50,
+              "option_text": "Continue cargo ops",
+              "option_order": 2,
+              "is_correct": false
+            },
+            {
+              "id": 51,
+              "option_text": "Stop cargo operations if unsafe and inform immediately",
+              "option_order": 3,
+              "is_correct": true
+            },
+            {
+              "id": 52,
+              "option_text": "Increase pump speed",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "question_text": "What is “line displacement”?",
+          "question_type": "single_choice",
+          "question_order": 14,
+          "marks": 1,
+          "options": [
+            {
+              "id": 53,
+              "option_text": "Pump breakdown",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 54,
+              "option_text": "Replacing one cargo with another in pipeline",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 55,
+              "option_text": "Cleaning tank",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 56,
+              "option_text": "Ballasting",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "question_text": "During loading, why is topping-off done slowly?",
+          "question_type": "single_choice",
+          "question_order": 15,
+          "marks": 1,
+          "options": [
+            {
+              "id": 57,
+              "option_text": "Save time",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 58,
+              "option_text": "Prevent overflow and static buildup",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 59,
+              "option_text": "Increase pressure",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 60,
+              "option_text": "Reduce density",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "question_text": "Under ISM, who is responsible for safe cargo operations onboard?",
+          "question_type": "single_choice",
+          "question_order": 16,
+          "marks": 1,
+          "options": [
+            {
+              "id": 61,
+              "option_text": "Only Master",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 62,
+              "option_text": "Only Chief Engineer",
+              "option_order": 2,
+              "is_correct": false
+            },
+            {
+              "id": 63,
+              "option_text": "All crew as per assigned duties",
+              "option_order": 3,
+              "is_correct": true
+            },
+            {
+              "id": 64,
+              "option_text": "Shore staff",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "question_text": "Before starting cargo operation, what is mandatory?",
+          "question_type": "single_choice",
+          "question_order": 17,
+          "marks": 1,
+          "options": [
+            {
+              "id": 65,
+              "option_text": "Personal decision",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 66,
+              "option_text": "Toolbox meeting and risk assessment",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 67,
+              "option_text": "Only permission from pumpman",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 68,
+              "option_text": "Weather report",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "question_text": "A near-miss during cargo operation should be:",
+          "question_type": "single_choice",
+          "question_order": 18,
+          "marks": 1,
+          "options": [
+            {
+              "id": 69,
+              "option_text": "Ignored",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 70,
+              "option_text": "Only Discuss verbally",
+              "option_order": 2,
+              "is_correct": false
+            },
+            {
+              "id": 71,
+              "option_text": "Hidden",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 72,
+              "option_text": "Reported as per SMS",
+              "option_order": 4,
+              "is_correct": true
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "question_text": "If you notice unsafe practice during operation:",
+          "question_type": "single_choice",
+          "question_order": 19,
+          "marks": 1,
+          "options": [
+            {
+              "id": 73,
+              "option_text": "Ignore",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 74,
+              "option_text": "Report and take corrective action",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 75,
+              "option_text": "Wait till operation ends",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 76,
+              "option_text": "Inform shore only",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "question_text": "Permit to Work is required for:",
+          "question_type": "single_choice",
+          "question_order": 20,
+          "marks": 1,
+          "options": [
+            {
+              "id": 77,
+              "option_text": "Routine pumping",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 78,
+              "option_text": "Hazardous jobs like tank entry/hot work",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 79,
+              "option_text": "Eating onboard",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 80,
+              "option_text": "Navigation",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "question_text": "During cargo ops, an unknown person tries to access deck. Action?",
+          "question_type": "single_choice",
+          "question_order": 21,
+          "marks": 1,
+          "options": [
+            {
+              "id": 81,
+              "option_text": "Allow entry",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 82,
+              "option_text": "Ignore",
+              "option_order": 2,
+              "is_correct": false
+            },
+            {
+              "id": 83,
+              "option_text": "Challenge and inform duty officer/SSO",
+              "option_order": 3,
+              "is_correct": true
+            },
+            {
+              "id": 84,
+              "option_text": "Leave post",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "question_text": "Restricted areas onboard tanker include:",
+          "question_type": "single_choice",
+          "question_order": 22,
+          "marks": 1,
+          "options": [
+            {
+              "id": 85,
+              "option_text": "Accommodation only",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 86,
+              "option_text": "Cargo control room and deck",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 87,
+              "option_text": "Galley",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 88,
+              "option_text": "Store room",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "question_text": "At higher security level, what increases?",
+          "question_type": "single_choice",
+          "question_order": 23,
+          "marks": 1,
+          "options": [
+            {
+              "id": 89,
+              "option_text": "Relaxation",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 90,
+              "option_text": "Security checks and monitoring",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 91,
+              "option_text": "Crew leave",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 92,
+              "option_text": "Cargo speed",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "question_text": "Suspicious package found near manifold. What should you do?",
+          "question_type": "single_choice",
+          "question_order": 24,
+          "marks": 1,
+          "options": [
+            {
+              "id": 93,
+              "option_text": "Open it",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 94,
+              "option_text": "Ignore",
+              "option_order": 2,
+              "is_correct": false
+            },
+            {
+              "id": 95,
+              "option_text": "Inform SSO and keep area clear",
+              "option_order": 3,
+              "is_correct": true
+            },
+            {
+              "id": 96,
+              "option_text": "Throw overboard",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "question_text": "Maximum continuous working hours should be:",
+          "question_type": "single_choice",
+          "question_order": 25,
+          "marks": 1,
+          "options": [
+            {
+              "id": 97,
+              "option_text": "As per Master",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 98,
+              "option_text": "Within MLC limits (rest hours compliance)",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 99,
+              "option_text": "Unlimited",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 100,
+              "option_text": "Only daytime",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 26,
+          "question_text": "If a crew is fatigued during cargo ops:",
+          "question_type": "single_choice",
+          "question_order": 26,
+          "marks": 1,
+          "options": [
+            {
+              "id": 101,
+              "option_text": "Continue work",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 102,
+              "option_text": "Report and seek rest as per MLC",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 103,
+              "option_text": "Ignore",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 104,
+              "option_text": "Take medicine only",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 27,
+          "question_text": "Accommodation complaints should be reported to:",
+          "question_type": "single_choice",
+          "question_order": 27,
+          "marks": 1,
+          "options": [
+            {
+              "id": 105,
+              "option_text": "Cook",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 106,
+              "option_text": "Master/designated person",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 107,
+              "option_text": "Shore police",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 108,
+              "option_text": "Nobody",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "question_text": "Medical fitness of crew is required:",
+          "question_type": "single_choice",
+          "question_order": 28,
+          "marks": 1,
+          "options": [
+            {
+              "id": 109,
+              "option_text": "Once in career",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 110,
+              "option_text": "Before joining and as required",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 111,
+              "option_text": "Not needed",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 112,
+              "option_text": "Only for officers",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 29,
+          "question_text": "During discharge, you notice abnormal vibration + pressure fluctuation. What is the BEST action?",
+          "question_type": "single_choice",
+          "question_order": 29,
+          "marks": 1,
+          "options": [
+            {
+              "id": 113,
+              "option_text": "Increase speed",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 114,
+              "option_text": "Ignore",
+              "option_order": 2,
+              "is_correct": false
+            },
+            {
+              "id": 115,
+              "option_text": "Stop pump and inform immediately",
+              "option_order": 3,
+              "is_correct": true
+            },
+            {
+              "id": 116,
+              "option_text": "Change tank",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "question_text": "While connecting hose, slight oil drip observed. What should be done FIRST?",
+          "question_type": "single_choice",
+          "question_order": 30,
+          "marks": 1,
+          "options": [
+            {
+              "id": 117,
+              "option_text": "Continue",
+              "option_order": 1,
+              "is_correct": false
+            },
+            {
+              "id": 118,
+              "option_text": "Tighten connection and report before starting",
+              "option_order": 2,
+              "is_correct": true
+            },
+            {
+              "id": 119,
+              "option_text": "Ignore",
+              "option_order": 3,
+              "is_correct": false
+            },
+            {
+              "id": 120,
+              "option_text": "Wash area",
+              "option_order": 4,
+              "is_correct": false
+            }
+          ]
+        }
+      ],
+      "set_2": [],
+      "set_3": []
+    },
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "updated_at": "2026-05-19T07:33:36.223Z"
+  },
+  {
+    "question_set_id": 9,
+    "set_name": "3RD OFFICER EXAM SET - 1",
+    "question_sets": {
+      "set_1": [],
+      "set_2": [],
+      "set_3": []
+    },
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "updated_at": "2024-01-01T00:00:00.000Z"
+  }
+]
