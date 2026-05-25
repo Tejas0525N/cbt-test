@@ -1654,11 +1654,81 @@ app.post('/api/admin/exam-results/:resultId/publish', authenticateToken, async (
     }
     
     examResults[resultIndex].published_to_profile = true;
-    examResults[resultIndex].email_sent = req.body.send_email || false;
+    
+    // Send email if requested
+    const sendEmail = req.body.send_email || false;
+    let emailSent = false;
+    
+    if (sendEmail) {
+      try {
+        // Get user and exam details
+        const examAttempts = await readJsonFile('exam-attempts.json');
+        const examSessions = await readJsonFile('exam-sessions.json');
+        const questionSets = await readJsonFile('question-sets.json');
+        const users = await readJsonFile('users.json');
+        
+        const attempt = examAttempts.find(a => a.id === examResults[resultIndex].exam_attempt_id);
+        const session = examSessions.find(s => s.id === attempt?.exam_session_id);
+        const questionSet = questionSets.find(qs => qs.id === session?.question_set_id);
+        const user = users.find(u => u.id === attempt?.user_id);
+        
+        if (user && user.email) {
+          // Configure email transporter
+          const transporter = nodemailer.createTransport({
+            host: process.env.SMTP_HOST || 'smtp.gmail.com',
+            port: parseInt(process.env.SMTP_PORT || '587'),
+            secure: process.env.SMTP_SECURE === 'true',
+            auth: {
+              user: process.env.SMTP_USER,
+              pass: process.env.SMTP_PASS,
+            },
+          });
+          
+          // Email content
+          const mailOptions = {
+            from: 'no-reply@maritimecbt.com',
+            replyTo: 'no-reply@maritimecbt.com',
+            to: user.email,
+            subject: `Your Exam Results - ${session?.title || 'Maritime CBT'}`,
+            html: `
+              <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+                <h2 style="color: #0f172a;">Exam Results</h2>
+                <p>Dear ${user.full_name || user.username},</p>
+                <p>Your exam results are now available:</p>
+                <div style="background-color: #f8fafc; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                  <p><strong>Exam:</strong> ${session?.title || 'Exam'}</p>
+                  <p><strong>Score:</strong> ${examResults[resultIndex].percentage_score}%</p>
+                  <p><strong>Correct Answers:</strong> ${examResults[resultIndex].correct_answers}/${examResults[resultIndex].total_questions}</p>
+                  <p><strong>Status:</strong> <span style="color: ${examResults[resultIndex].passed ? '#10b981' : '#ef4444'}; font-weight: bold;">${examResults[resultIndex].passed ? 'PASSED' : 'FAILED'}</span></p>
+                </div>
+                <p>You can view your complete results by logging into your account.</p>
+                <p style="font-size: 12px; color: #64748b; margin-top: 30px;">
+                  This is an automated email. Please do not reply to this message.
+                </p>
+                <p>Best regards,<br>Maritime CBT Team</p>
+              </div>
+            `,
+          };
+          
+          // Send email
+          await transporter.sendMail(mailOptions);
+          emailSent = true;
+          console.log(`📧 Email sent to ${user.email}`);
+        }
+      } catch (emailError) {
+        console.error('❌ Error sending email:', emailError);
+        // Don't fail the whole request if email fails
+      }
+    }
+    
+    examResults[resultIndex].email_sent = emailSent;
     
     await writeJsonFile('exam-results.json', examResults);
     
-    res.json({ message: 'Results published successfully' });
+    res.json({ 
+      message: 'Results published successfully',
+      email_sent: emailSent
+    });
   } catch (error) {
     console.error('Error publishing results:', error);
     res.status(500).json({ error: 'Failed to publish results' });

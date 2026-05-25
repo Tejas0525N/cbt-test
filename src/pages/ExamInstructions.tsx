@@ -224,14 +224,15 @@ const ExamInstructions = () => {
       return;
     }
 
-    if (!capturedPhoto) {
-      setPhotoDialogOpen(true);
-      return;
-    }
+    // Temporarily skip photo requirement for HTTP (no SSL)
+    // if (!capturedPhoto) {
+    //   setPhotoDialogOpen(true);
+    //   return;
+    // }
 
     setIsStarting(true);
     try {
-      await examAPI.createAttempt(sessionId!, capturedPhoto);
+      await examAPI.createAttempt(sessionId!, capturedPhoto); // Pass null/undefined if no photo
       navigate(`/exam/take/${sessionId}`);
     } catch (error: any) {
       const message = error.response?.data?.message || error.response?.data?.error || 'Failed to start exam';
@@ -271,8 +272,8 @@ const ExamInstructions = () => {
               </div>
             )}
 
-            {/* Photo Status */}
-            {examStatus.canStart && (
+            {/* Photo Status - Temporarily Disabled for HTTP */}
+            {/* {examStatus.canStart && (
               <div className={`rounded-lg border p-4 ${
                 capturedPhoto 
                   ? 'border-success/20 bg-success/10' 
@@ -294,7 +295,7 @@ const ExamInstructions = () => {
                   </div>
                 </div>
               </div>
-            )}
+            )} */}
 
             {/* Exam Details */}
             <div className="bg-muted/50 rounded-lg p-4">
@@ -348,7 +349,7 @@ const ExamInstructions = () => {
               </div>
             </div>
 
-            {/* Technical Requirements */}
+            {/* Technical Requirements - Temporarily Remove Camera Requirement */}
             <div className="space-y-3">
               <h3 className="font-semibold">Technical Requirements</h3>
               <div className="text-sm space-y-2 text-muted-foreground">
@@ -356,7 +357,6 @@ const ExamInstructions = () => {
                 <p>• Modern web browser (Chrome, Firefox, Safari, Edge)</p>
                 <p>• No popup blockers enabled</p>
                 <p>• Ensure your screen resolution is at least 1024x768</p>
-                <p>• Camera access required for identity verification</p>
               </div>
             </div>
 
@@ -374,7 +374,7 @@ const ExamInstructions = () => {
                 className="flex-1"
                 disabled={!examStatus.canStart || isStarting}
               >
-                {isStarting ? 'Starting...' : capturedPhoto ? 'Start Exam' : 'Capture Photo'}
+                {isStarting ? 'Starting...' : 'Start Exam'}
               </Button>
             </div>
 
