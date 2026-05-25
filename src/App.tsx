@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { AuthProvider } from "@/hooks/useAuth";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import LoginPage from "@/pages/LoginPage";
+import RegisterPage from "@/pages/RegisterPage";
 import AdminDashboard from "@/pages/AdminDashboard";
 import ExamPortal from "@/pages/ExamPortal";
 import ExamInstructions from "@/pages/ExamInstructions";
@@ -26,6 +27,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Navigate to="/login" replace />} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<RegisterPage />} />
             
             {/* Admin routes */}
             <Route element={<ProtectedRoute allowedRole="admin" />}>

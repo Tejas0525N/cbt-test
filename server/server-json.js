@@ -498,12 +498,17 @@ app.delete('/api/admin/exam-sessions/:sessionId', authenticateToken, async (req,
 app.post('/api/auth/login', async (req, res) => {
   const { email, password } = req.body;
   
+  console.log('=== Login Attempt ===');
+  console.log('Email:', email);
+  console.log('Password:', password);
+  
   if (!email || !password) {
     return res.status(400).json({ error: 'Email and password are required' });
   }
   
   // Mock admin login
-  if (email === 'admin@maritimecbt.com' && password === 'admin123') {
+  if (email.trim().toLowerCase() === 'admin@maritimecbt.com' && password === 'admin123') {
+    console.log('✅ Admin login successful!');
     const token = jwt.sign(
       { id: '1', email: 'admin@maritimecbt.com', role: 'admin' },
       JWT_SECRET,
@@ -523,12 +528,14 @@ app.post('/api/auth/login', async (req, res) => {
   
   try {
     const users = await readJsonFile('users.json');
+    console.log('Loaded users from file:', users.length);
     const normalizedLogin = email.toLowerCase();
     const existingUser = users.find(
       (user) => user.email.toLowerCase() === normalizedLogin || user.username.toLowerCase() === normalizedLogin
     );
     
     if (existingUser) {
+      console.log('✅ Existing user login successful!');
       const token = jwt.sign(
         { id: existingUser.id.toString(), email: existingUser.email, role: 'user' },
         JWT_SECRET,
@@ -547,6 +554,7 @@ app.post('/api/auth/login', async (req, res) => {
     }
     
     // Create a demo user on-the-fly for any valid credentials
+    console.log('🔄 Creating new demo user...');
     const newUser = {
       id: Math.max(...users.map((u) => u.id), 0) + 1,
       username: normalizedLogin.includes('@') ? normalizedLogin.split('@')[0] : normalizedLogin,
@@ -570,6 +578,7 @@ app.post('/api/auth/login', async (req, res) => {
       { expiresIn: '24h' }
     );
     
+    console.log('✅ New user created and logged in!');
     return res.json({
       token,
       user: {
@@ -580,7 +589,7 @@ app.post('/api/auth/login', async (req, res) => {
       }
     });
   } catch (error) {
-    console.error('Error during login:', error);
+    console.error('❌ Error during login:', error);
     return res.status(500).json({ error: 'Failed to authenticate user' });
   }
 });
