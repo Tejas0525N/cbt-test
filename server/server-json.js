@@ -11,7 +11,7 @@ const nodemailer = require('nodemailer');
 require('dotenv').config();
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key';
 
 // Middleware
@@ -1739,6 +1739,20 @@ app.post('/api/admin/exam-results/:resultId/publish', authenticateToken, async (
 app.get('/api/health', (req, res) => {
   res.json({ status: 'Server is running', timestamp: new Date().toISOString() });
 });
+
+// Serve frontend static files
+const distPath = path.join(__dirname, '..', 'dist');
+if (fsSync.existsSync(distPath)) {
+  app.use(express.static(distPath));
+  
+  // For SPA routing - send index.html for all non-API routes
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api/')) {
+      return next();
+    }
+    res.sendFile(path.join(distPath, 'index.html'));
+  });
+}
 
 app.listen(PORT, () => {
   console.log(`JSON-based server is running on port ${PORT}`);

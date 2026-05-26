@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: mariner-mastery
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build && cd server && npm install
+    startCommand: cd server && node server-json.js
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+      - key: JWT_SECRET
+        generateValue: true
+    autoDeploy: true
+    branch: main
