@@ -3,22 +3,14 @@ import { useQuery } from "@tanstack/react-query";
 import { examAPI } from "@/lib/api";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Anchor, AlertTriangle, Clock, Monitor, CheckCircle, Camera, X, RefreshCw } from "lucide-react";
-import { useState, useRef, useEffect } from "react";
+import { Anchor, AlertTriangle, Clock, Monitor, CheckCircle } from "lucide-react";
+import { useState } from "react";
 import { toast } from "sonner";
 
 const ExamInstructions = () => {
   const { sessionId } = useParams<{ sessionId: string }>();
   const navigate = useNavigate();
   const [isStarting, setIsStarting] = useState(false);
-  const [photoDialogOpen, setPhotoDialogOpen] = useState(false);
-  const [capturedPhoto, setCapturedPhoto] = useState<string | null>(null);
-  const [cameraActive, setCameraActive] = useState(false);
-  const [cameraLoading, setCameraLoading] = useState(false);
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const streamRef = useRef<MediaStream | null>(null);
 
   const { data: session, isLoading } = useQuery({
     queryKey: ["session", sessionId],
@@ -47,7 +39,6 @@ const ExamInstructions = () => {
     }
 
     if (!examResult) {
-      // Check if exam is within date range
       const now = new Date();
       const startDate = new Date(session.start_date);
       const endDate = new Date(session.end_date);
@@ -104,118 +95,6 @@ const ExamInstructions = () => {
     return { canStart: true, message: '', reason: 'available' };
   };
 
-  // Camera functions
-  const startCamera = async () => {
-    setCameraLoading(true);
-    try {
-      console.log("=== Starting Camera ===");
-      console.log("1. Requesting camera access...");
-      
-      const stream = await navigator.mediaDevices.getUserMedia({
-        video: {
-          width: { min: 640, ideal: 1280, max: 1920 },
-          height: { min: 480, ideal: 720, max: 1080 }
-        },
-        audio: false
-      });
-      
-      console.log("2. Camera access granted!");
-      streamRef.current = stream;
-      
-      if (videoRef.current) {
-        console.log("3. Setting video source...");
-        
-        // Set the source
-        videoRef.current.srcObject = stream;
-        
-        // Force a small reflow
-        videoRef.current.load();
-        
-        console.log("4. Playing video...");
-        // Try to play
-        videoRef.current.play()
-          .then(() => {
-            console.log("5. Camera started SUCCESSFULLY!");
-            setCameraActive(true);
-            setCameraLoading(false);
-          })
-          .catch((err) => {
-            console.error("Error playing video:", err);
-            setCameraLoading(false);
-            toast.error("Error starting camera preview");
-          });
-      } else {
-        console.error("Video ref is null!");
-        setCameraLoading(false);
-        toast.error("Video element not found");
-      }
-    } catch (error: any) {
-      console.error("Error accessing camera:", error);
-      setCameraLoading(false);
-      let errorMessage = "Could not access camera. Please check camera permissions.";
-      
-      if (error.name === "NotAllowedError") {
-        errorMessage = "Camera access denied. Please allow camera access in your browser settings.";
-      } else if (error.name === "NotFoundError") {
-        errorMessage = "No camera found. Please connect a camera and try again.";
-      } else if (error.name === "NotReadableError") {
-        errorMessage = "Camera is already in use by another application.";
-      }
-      
-      toast.error(errorMessage);
-    }
-  };
-
-  const stopCamera = () => {
-    if (streamRef.current) {
-      streamRef.current.getTracks().forEach(track => track.stop());
-      streamRef.current = null;
-    }
-    setCameraActive(false);
-  };
-
-  const capturePhoto = () => {
-    if (videoRef.current && canvasRef.current) {
-      const video = videoRef.current;
-      const canvas = canvasRef.current;
-      canvas.width = video.videoWidth;
-      canvas.height = video.videoHeight;
-      const ctx = canvas.getContext('2d');
-      if (ctx) {
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const photoData = canvas.toDataURL('image/jpeg', 0.8);
-        setCapturedPhoto(photoData);
-        stopCamera();
-      }
-    }
-  };
-
-  const retakePhoto = () => {
-    setCapturedPhoto(null);
-    startCamera();
-  };
-
-  const closePhotoDialog = () => {
-    stopCamera();
-    setPhotoDialogOpen(false);
-  };
-
-  // Cleanup camera on unmount
-  useEffect(() => {
-    return () => {
-      stopCamera();
-    };
-  }, []);
-
-  // Start camera when dialog opens
-  useEffect(() => {
-    if (photoDialogOpen && !capturedPhoto && !cameraActive && !cameraLoading) {
-      setTimeout(() => {
-        startCamera();
-      }, 100);
-    }
-  }, [photoDialogOpen, capturedPhoto, cameraActive, cameraLoading]);
-
   const examStatus = getExamStatus();
 
   const startExam = async () => {
@@ -224,15 +103,9 @@ const ExamInstructions = () => {
       return;
     }
 
-    // Temporarily skip photo requirement for HTTP (no SSL)
-    // if (!capturedPhoto) {
-    //   setPhotoDialogOpen(true);
-    //   return;
-    // }
-
     setIsStarting(true);
     try {
-      await examAPI.createAttempt(sessionId!, capturedPhoto); // Pass null/undefined if no photo
+      await examAPI.createAttempt(sessionId!, null);
       navigate(`/exam/take/${sessionId}`);
     } catch (error: any) {
       const message = error.response?.data?.message || error.response?.data?.error || 'Failed to start exam';
@@ -251,259 +124,113 @@ const ExamInstructions = () => {
   }
 
   return (
-    <>
-      <div className="min-h-screen bg-primary flex items-center justify-center p-4">
-        <Card className="w-full max-w-2xl border-0 shadow-2xl">
-          <CardHeader className="text-center">
-            <div className="flex justify-center mb-4">
-              <Anchor className="h-12 w-12 text-accent" />
-            </div>
-            <CardTitle className="font-heading text-2xl">Exam Instructions</CardTitle>
-            <p className="text-muted-foreground">{session?.title}</p>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            {/* Status Alert */}
-            {!examStatus.canStart && (
-              <div className="rounded-lg border border-destructive/20 bg-destructive/10 p-4">
-                <div className="flex items-start gap-3">
-                  <AlertTriangle className="h-5 w-5 text-destructive mt-0.5 flex-shrink-0" />
-                  <p className="text-sm text-destructive font-medium">{examStatus.message}</p>
-                </div>
-              </div>
-            )}
-
-            {/* Photo Status - Temporarily Disabled for HTTP */}
-            {/* {examStatus.canStart && (
-              <div className={`rounded-lg border p-4 ${
-                capturedPhoto 
-                  ? 'border-success/20 bg-success/10' 
-                  : 'border-warning/20 bg-warning/10'
-              }`}>
-                <div className="flex items-start gap-3">
-                  <Camera className={`h-5 w-5 mt-0.5 flex-shrink-0 ${
-                    capturedPhoto ? 'text-success' : 'text-warning'
-                  }`} />
-                  <div className="space-y-1">
-                    <h4 className="font-semibold">
-                      {capturedPhoto ? '✓ Photo Captured' : '⚠️ Photo Required'}
-                    </h4>
-                    <p className="text-sm text-muted-foreground">
-                      {capturedPhoto 
-                        ? 'Your photo has been captured. You can now start the exam.' 
-                        : 'Please capture a live photo before starting the exam.'}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            )} */}
-
-            {/* Exam Details */}
-            <div className="bg-muted/50 rounded-lg p-4">
-              <h3 className="font-semibold mb-2">Exam Details</h3>
-              <div className="grid grid-cols-2 gap-4 text-sm">
-                <div className="flex items-center gap-2">
-                  <Clock className="h-4 w-4 text-primary" />
-                  <span>Duration: {session?.duration_minutes || 60} minutes</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Monitor className="h-4 w-4 text-primary" />
-                  <span>Computer Based Test</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Important Instructions */}
-            <div className="space-y-4">
-              <h3 className="font-semibold">Important Instructions</h3>
-              <div className="space-y-3 text-sm">
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-success mt-0.5 flex-shrink-0" />
-                  <span>Read each question carefully before selecting your answer</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-success mt-0.5 flex-shrink-0" />
-                  <span>You can navigate between questions using Previous/Next buttons</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-success mt-0.5 flex-shrink-0" />
-                  <span>Make sure to answer all questions before submitting</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-success mt-0.5 flex-shrink-0" />
-                  <span>The exam will be automatically submitted when time expires</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Warning Section */}
-            <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-4">
+    <div className="min-h-screen bg-primary flex items-center justify-center p-4">
+      <Card className="w-full max-w-2xl border-0 shadow-2xl">
+        <CardHeader className="text-center">
+          <div className="flex justify-center mb-4">
+            <Anchor className="h-12 w-12 text-accent" />
+          </div>
+          <CardTitle className="font-heading text-2xl">Exam Instructions</CardTitle>
+          <p className="text-muted-foreground">{session?.title}</p>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          {/* Status Alert */}
+          {!examStatus.canStart && (
+            <div className="rounded-lg border border-destructive/20 bg-destructive/10 p-4">
               <div className="flex items-start gap-3">
                 <AlertTriangle className="h-5 w-5 text-destructive mt-0.5 flex-shrink-0" />
-                <div className="space-y-2">
-                  <h4 className="font-semibold text-destructive">Important Warning</h4>
-                  <p className="text-sm text-destructive">
-                    Switching tabs or windows during the exam will result in automatic submission. 
-                    Please ensure you remain on this page throughout the exam.
-                  </p>
-                </div>
+                <p className="text-sm text-destructive font-medium">{examStatus.message}</p>
               </div>
             </div>
+          )}
 
-            {/* Technical Requirements - Temporarily Remove Camera Requirement */}
-            <div className="space-y-3">
-              <h3 className="font-semibold">Technical Requirements</h3>
-              <div className="text-sm space-y-2 text-muted-foreground">
-                <p>• Stable internet connection throughout the exam</p>
-                <p>• Modern web browser (Chrome, Firefox, Safari, Edge)</p>
-                <p>• No popup blockers enabled</p>
-                <p>• Ensure your screen resolution is at least 1024x768</p>
+          {/* Exam Details */}
+          <div className="bg-muted/50 rounded-lg p-4">
+            <h3 className="font-semibold mb-2">Exam Details</h3>
+            <div className="grid grid-cols-2 gap-4 text-sm">
+              <div className="flex items-center gap-2">
+                <Clock className="h-4 w-4 text-primary" />
+                <span>Duration: {session?.duration_minutes || 60} minutes</span>
               </div>
-            </div>
-
-            {/* Action Buttons */}
-            <div className="flex gap-3 pt-4">
-              <Button 
-                variant="outline" 
-                onClick={() => navigate("/exam")} 
-                className="flex-1"
-              >
-                Back to Portal
-              </Button>
-              <Button 
-                onClick={startExam} 
-                className="flex-1"
-                disabled={!examStatus.canStart || isStarting}
-              >
-                {isStarting ? 'Starting...' : 'Start Exam'}
-              </Button>
-            </div>
-
-            <div className="text-center text-xs text-muted-foreground pt-4">
-              By clicking "Start Exam", you agree to abide by these instructions and terms.
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-
-      {/* Photo Capture Dialog */}
-      <Dialog open={photoDialogOpen} onOpenChange={setPhotoDialogOpen}>
-        <DialogContent className="sm:max-w-md">
-          <DialogHeader>
-            <DialogTitle className="flex items-center gap-2">
-              <Camera className="h-5 w-5" />
-              Capture Live Photo
-            </DialogTitle>
-          </DialogHeader>
-          
-          <div className="space-y-4">
-            <p className="text-sm text-muted-foreground">
-              Please allow camera access and capture a clear photo of yourself.
-            </p>
-
-            <div className="relative rounded-lg overflow-hidden bg-black aspect-video" style={{ minHeight: '300px' }}>
-              {cameraLoading && (
-                <div className="absolute inset-0 flex items-center justify-center z-10 bg-black">
-                  <div className="text-center">
-                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white mx-auto mb-2"></div>
-                    <p className="text-white">Starting camera...</p>
-                  </div>
-                </div>
-              )}
-              
-              {!capturedPhoto && (
-                <video
-                  ref={videoRef}
-                  autoPlay
-                  playsInline
-                  muted
-                  className="w-full h-full object-cover"
-                />
-              )}
-              
-              {capturedPhoto && (
-                <img
-                  src={capturedPhoto}
-                  alt="Captured"
-                  className="w-full h-full object-cover absolute inset-0 z-20"
-                />
-              )}
-              
-              {!cameraActive && !capturedPhoto && !cameraLoading && (
-                <div className="absolute inset-0 flex items-center justify-center bg-black z-10">
-                  <p className="text-white text-center px-4">
-                    Camera not active. Click "Start Camera" to begin.
-                  </p>
-                </div>
-              )}
-            </div>
-
-            <canvas ref={canvasRef} className="hidden" />
-
-            <div className="flex gap-2">
-              {!capturedPhoto ? (
-                <>
-                  {!cameraActive ? (
-                    <Button 
-                      onClick={() => {
-                        startCamera();
-                      }}
-                      className="flex-1"
-                      disabled={cameraLoading}
-                    >
-                      {cameraLoading ? (
-                        <>
-                          <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-primary-foreground mr-2"></div>
-                          Starting...
-                        </>
-                      ) : (
-                        <>
-                          <Camera className="h-4 w-4 mr-2" />
-                          Start Camera
-                        </>
-                      )}
-                    </Button>
-                  ) : (
-                    <Button 
-                      onClick={capturePhoto}
-                      className="flex-1"
-                    >
-                      <Camera className="h-4 w-4 mr-2" />
-                      Capture Photo
-                    </Button>
-                  )}
-                </>
-              ) : (
-                <>
-                  <Button 
-                    variant="outline" 
-                    onClick={retakePhoto}
-                    className="flex-1"
-                  >
-                    <RefreshCw className="h-4 w-4 mr-2" />
-                    Retake
-                  </Button>
-                  <Button 
-                    onClick={() => {
-                      setPhotoDialogOpen(false);
-                    }}
-                    className="flex-1"
-                  >
-                    Use Photo
-                  </Button>
-                </>
-              )}
-              
-              <Button 
-                variant="ghost" 
-                onClick={closePhotoDialog}
-              >
-                <X className="h-4 w-4" />
-              </Button>
+              <div className="flex items-center gap-2">
+                <Monitor className="h-4 w-4 text-primary" />
+                <span>Computer Based Test</span>
+              </div>
             </div>
           </div>
-        </DialogContent>
-      </Dialog>
-    </>
+
+          {/* Important Instructions */}
+          <div className="space-y-4">
+            <h3 className="font-semibold">Important Instructions</h3>
+            <div className="space-y-3 text-sm">
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-success mt-0.5 flex-shrink-0" />
+                <span>Read each question carefully before selecting your answer</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-success mt-0.5 flex-shrink-0" />
+                <span>You can navigate between questions using Previous/Next buttons</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-success mt-0.5 flex-shrink-0" />
+                <span>Make sure to answer all questions before submitting</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-success mt-0.5 flex-shrink-0" />
+                <span>The exam will be automatically submitted when time expires</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Warning Section */}
+          <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-4">
+            <div className="flex items-start gap-3">
+              <AlertTriangle className="h-5 w-5 text-destructive mt-0.5 flex-shrink-0" />
+              <div className="space-y-2">
+                <h4 className="font-semibold text-destructive">Important Warning</h4>
+                <p className="text-sm text-destructive">
+                  Switching tabs or windows during the exam will result in automatic submission. 
+                  Please ensure you remain on this page throughout the exam.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Technical Requirements */}
+          <div className="space-y-3">
+            <h3 className="font-semibold">Technical Requirements</h3>
+            <div className="text-sm space-y-2 text-muted-foreground">
+              <p>• Stable internet connection throughout the exam</p>
+              <p>• Modern web browser (Chrome, Firefox, Safari, Edge)</p>
+              <p>• No popup blockers enabled</p>
+              <p>• Ensure your screen resolution is at least 1024x768</p>
+            </div>
+          </div>
+
+          {/* Action Buttons */}
+          <div className="flex gap-3 pt-4">
+            <Button 
+              variant="outline" 
+              onClick={() => navigate("/exam")} 
+              className="flex-1"
+            >
+              Back to Portal
+            </Button>
+            <Button 
+              onClick={startExam} 
+              className="flex-1"
+              disabled={!examStatus.canStart || isStarting}
+            >
+              {isStarting ? 'Starting...' : 'Start Exam'}
+            </Button>
+          </div>
+
+          <div className="text-center text-xs text-muted-foreground pt-4">
+            By clicking "Start Exam", you agree to abide by these instructions and terms.
+          </div>
+        </CardContent>
+      </Card>
+    </div>
   );
 };
 

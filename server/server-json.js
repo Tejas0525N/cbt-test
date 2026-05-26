@@ -1197,10 +1197,6 @@ app.post('/api/exam-attempts', authenticateToken, async (req, res) => {
       return res.status(400).json({ error: 'examSessionId is required' });
     }
     
-    if (!photo_data || typeof photo_data !== 'string') {
-      return res.status(400).json({ error: 'A live photo is required to start the exam' });
-    }
-    
     if (!userId || isNaN(userId)) {
       return res.status(401).json({ error: 'Invalid user ID in token' });
     }
@@ -1304,12 +1300,6 @@ app.post('/api/exam-attempts', authenticateToken, async (req, res) => {
     // Determine attempt number and question set
     const attemptNumber = userAttempts.length + 1;
     
-    // Save captured photo to disk and attach to attempt
-    const photoPath = await saveBase64Image(photo_data, `exam_${examSessionId}_user_${userId}`);
-    if (!photoPath) {
-      return res.status(500).json({ error: 'Failed to save captured photo' });
-    }
-    
     // Create new attempt
     const newAttempt = {
       id: parseInt(examSessionId) * 100 + attemptNumber, // Unique ID for each attempt
@@ -1323,8 +1313,7 @@ app.post('/api/exam-attempts', authenticateToken, async (req, res) => {
       time_taken_minutes: null,
       passed: false,
       percentage_score: null,
-      next_attempt_available: null,
-      photo_path: photoPath
+      next_attempt_available: null
     };
     
     examAttempts.push(newAttempt);
