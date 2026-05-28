@@ -3,12 +3,18 @@ services:
     name: mariner-mastery
     env: node
     plan: free
-    buildCommand: npm install && npm run build && cd server && npm install
+    runtime: node
+    nodeVersion: 22.0.0
+    buildCommand: npm ci && npm run build && cd server && npm ci --omit=dev
     startCommand: cd server && node server-json.js
     envVars:
-      - key: NODE_VERSION
-        value: 18
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: "3001"
       - key: JWT_SECRET
         generateValue: true
     autoDeploy: true
     branch: main
+    healthCheckPath: /
+    healthCheckTimeout: 30

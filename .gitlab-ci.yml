@@ -1,0 +1,36 @@
+# GitLab CI/CD Pipeline for Render.com Deployment
+# Automatically triggers Render deployment on push to main branch
+
+stages:
+  - deploy
+
+# ============================================================================
+# Trigger Render Deployment
+# ============================================================================
+deploy:render:
+  stage: deploy
+  image: curlimages/curl:latest
+  script:
+    - echo "Triggering Render deployment for branch: $CI_COMMIT_BRANCH"
+    - |
+      curl -X POST \
+        "https://api.render.com/deploy/srv-$RENDER_SERVICE_ID?key=$RENDER_DEPLOY_KEY" \
+        -H "Accept: application/json"
+    - echo "Deployment triggered successfully!"
+  only:
+    - main
+  when: on_success
+
+# ============================================================================
+# Optional: Lint and Test (uncomment if tests exist)
+# ============================================================================
+# test:
+#   image: node:20-alpine
+#   stage: test
+#   script:
+#     - npm ci
+#     - npm run test
+#   cache:
+#     paths:
+#       - node_modules/
+#   allow_failure: true
